@@ -1,0 +1,28 @@
+Implicit Wait in Selenium
+The Implicit Wait in Selenium is used to tell the web driver to wait for a certain amount of time before it throws a “No Such Element Exception”. 
+
+The default setting is 0. 
+
+Once we set the time, the web driver will wait for the element for that time before throwing an exception.
+
+Selenium Web Driver has borrowed the idea of implicit waits from Watir.
+
+It is written for all webelements of that page
+In the below example we have declared an implicit wait with the time frame of 10 seconds. 
+It means that if the element is not located on the web page within that time frame, it will throw an exception.
+
+To declare implicit wait in Selenium WebDriver:
+driver.manage().timeouts().implicitlyWait(10,TimeUnit.SECONDS) ;
+
+Explicit Wait in Selenium
+The Explicit Wait in Selenium is used to tell the Web Driver to wait for certain conditions (Expected Conditions) or 
+maximum time exceeded before throwing “ElementNotVisibleException” exception. 
+
+Explicit waits are used to halt the execution until the time a particular condition is met or the maximum time has elapsed. 
+Unlike Implicit waits, Explicit waits are applied for a particular instance only.
+
+WebDriver introduces classes like WebDriverWait and ExpectedConditions to enforce Explicit waits into the test scripts. In the ambit of this discussion, we will use “gmail.com” as a specimen.
+It is an intelligent kind of wait, but it can be applied only for specified elements. It gives better options than implicit wait as it waits for dynamically loaded Ajax elements.
+
+Once we declare explicit wait we have to use “ExpectedConditions” or we can configure how frequently we want to check the condition using Fluent Wait. 
+These days while implementing we are using Thread.Sleep() generally it is not recommended to use

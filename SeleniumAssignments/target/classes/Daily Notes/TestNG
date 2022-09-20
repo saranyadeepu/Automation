@@ -1,0 +1,5 @@
+
+TestNG is an automation testing framework in which NG stands for “Next Generation”.
+
+Using TestNG, you can generate a proper report, and you can easily come to know how many test cases are passed, failed, and skipped. 
+You can execute the failed test cases separately.

@@ -1,0 +1,27 @@
+CSS Selector
+driver.findElement(By.tagName("button")).click();
+
+Tagname should be unique.
+
+Locator
+Xpath = //Tagname[@attribute='value']
+driver.findElement(By.xpath("//a[@href='/payrollapp/site/request-password-reset']")).click();
+
+Assertions
+2 types
+1. Hard Assert - the remaining codes wont be executed if the assertion result fails.
+
+	1. Code Line 1
+	2. Code Line 2
+	3. Assert.assertequals(Expected(True),Actual(false))- Test Case Fail and rest of the code wont be executed.
+	4. Code Line 4
+	5. Code Line 5	
+	
+2. Soft Assert
+
+	1. Code Line 1
+	2. Code Line 2
+	3. SoftAssert assert = new SoftAssert{};
+	4. assert.assertequals(true,false); If soft assert fails, below steps will be get executed
+	5. Code Line 5
+	6. Code Line 6

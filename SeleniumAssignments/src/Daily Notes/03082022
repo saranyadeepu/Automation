@@ -1,0 +1,18 @@
+What kids of test cases to be automated?
+> Test cases which require regression testing
+> Manual testing which takes time
+
+Difference between for each and for loop
+
+Locators
+> LinkText
+> PartialLinkText
+> ClassName
+
+CSS Selector
+When there is no locators, CSS selector is used to inspect elements
+
+Synatx: Tagname[attribute='value']
+input[type = 'text'] input[paceholder='UserName'] input[id='inpustUserName']
+
+When we are having ID, we can convert that to CSS Selector by simply putting # infront of it.

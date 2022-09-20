@@ -1,0 +1,30 @@
+Why we are creating Webdriver instance(WebDriver driver = new ChromeDriver();) instead of creating object for Chrome like ChromeDriver driverC = new ChromeDriver();
+> Compactability
+> some methods are available only for some drivers, which is not compactability in some other drivers,
+> Eg: resetInputState(); which is available only for Chrome. When we tried to change driver to Firefox, code will show error.
+> To avoid this we create instance for WebDriver
+
+Navigate
+		driver.navigate().back();
+		driver.navigate().forward();
+		driver.navigate().refresh();
+		
+Driver commands
+		driver.get()
+		driver.getTitle();
+		driver.getCurrentUrl();
+		driver.getPageSource();
+		
+Locators
+Locators in Selenium
+1. ID
+2. Name
+3. ClassName
+4. LinkText
+5. PartialLinkTest
+6. CSS Selector
+7. Xpath
+8. Tagname
+
+
+
