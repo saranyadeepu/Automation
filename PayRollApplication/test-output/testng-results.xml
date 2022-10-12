@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2022-10-12T19:31:07 IST" name="Default suite" finished-at="2022-10-12T19:31:15 IST" duration-ms="7519">
+    <groups>
+    </groups>
+    <test started-at="2022-10-12T19:31:07 IST" name="Default test" finished-at="2022-10-12T19:31:15 IST" duration-ms="7519">
+      <class name="com.RegressionTestCases.VerifyUserLoginTest">
+        <test-method is-config="true" signature="loadConfig()[pri:0, instance:com.RegressionTestCases.VerifyUserLoginTest@2a798d51]" started-at="2022-10-12T19:31:07 IST" name="loadConfig" finished-at="2022-10-12T19:31:07 IST" duration-ms="9" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loadConfig -->
+        <test-method is-config="true" signature="call()[pri:0, instance:com.RegressionTestCases.VerifyUserLoginTest@2a798d51]" started-at="2022-10-12T19:31:07 IST" name="call" finished-at="2022-10-12T19:31:12 IST" depends-on-methods="com.BaseClass.BaseClass.loadConfig" duration-ms="5395" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- call -->
+        <test-method signature="validUserLoginTest()[pri:0, instance:com.RegressionTestCases.VerifyUserLoginTest@2a798d51]" started-at="2022-10-12T19:31:13 IST" name="validUserLoginTest" finished-at="2022-10-12T19:31:15 IST" duration-ms="2089" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validUserLoginTest -->
+      </class> <!-- com.RegressionTestCases.VerifyUserLoginTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
