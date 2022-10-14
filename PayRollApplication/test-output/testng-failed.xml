@@ -3,13 +3,14 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.RegressionTestCases.VerifyUserLoginTest">
+      <class name="com.RegressionTestCases.AddValidClientTest">
         <methods>
-          <include name="loadConfig"/>
+          <include name="addClient"/>
           <include name="call"/>
-          <include name="validUserLoginTest"/>
+          <include name="loadConfig"/>
+          <include name="closeBrowser"/>
         </methods>
-      </class> <!-- com.RegressionTestCases.VerifyUserLoginTest -->
+      </class> <!-- com.RegressionTestCases.AddValidClientTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

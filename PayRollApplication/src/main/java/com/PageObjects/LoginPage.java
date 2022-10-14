@@ -1,9 +1,12 @@
 package com.PageObjects;
 
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
+
+import com.ActionDriver.Action;
 
 public class LoginPage {
 
@@ -57,5 +60,13 @@ public class LoginPage {
 		UserName().sendKeys("carol");
 		Password().sendKeys("1q2w3e4r");
 		Login().click();;
+	}
+	
+	public  boolean actionCheck()
+	{
+		WebElement ele =  driver.findElement(By.xpath("//h1[text()='Payroll Application']"));
+		Action act = new Action();
+		boolean flag = act.isDisplayed(driver, ele);
+		return flag;
 	}
 }
