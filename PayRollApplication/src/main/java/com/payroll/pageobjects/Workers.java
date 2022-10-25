@@ -1,17 +1,19 @@
 package com.payroll.pageobjects;
 
-import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
+import com.payroll.actiondriver.Action;
+
 public class Workers {
 	WebDriver driver;
-	
+	Action act = new Action();
+	boolean flag;
 	@FindBy(xpath = "//a[@href='/payrollapp/worker']")
 	WebElement workerMenu;
-	@FindBy(xpath = "//a[normalize-space()='Create Worker']")
+	@FindBy(xpath = "//a[text()='Create Worker']")
 	WebElement workerCreate;
 	//Search
 	@FindBy(xpath = "//input[@id='workersearch-first_name']")
@@ -253,6 +255,10 @@ public class Workers {
 	public WebElement workerSubmit() {
 
 		return workerSubmit;
+	}
+	public boolean actionCheck() {
+		flag = driver.getPageSource().contains("cannot be blank");
+		return flag;		
 	}
 
 	

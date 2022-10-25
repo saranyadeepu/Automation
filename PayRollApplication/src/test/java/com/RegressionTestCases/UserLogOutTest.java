@@ -2,7 +2,6 @@ package com.RegressionTestCases;
 
 import org.testng.Assert;
 import org.testng.annotations.BeforeMethod;
-import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
 import com.payroll.actiondriver.Action;
@@ -16,6 +15,7 @@ public class UserLogOutTest extends BaseClass {
 	public void call() {
 		launchApp();
 	}
+
 	@Test
 	public void userLogOut() {
 		LoginPage lp = new LoginPage(driver);
@@ -27,15 +27,14 @@ public class UserLogOutTest extends BaseClass {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
-		
+
 		HomePage hp = new HomePage(driver);
-		act.mouseover(driver,hp.userProfile());
+		act.mouseover(driver, hp.userProfile());
 		hp.userProfile().click();
 		hp.userLogout().click();
-		
-		boolean flag =lp.beforeLoginCheck();
+
+		boolean flag = lp.beforeLoginCheck();
 		Assert.assertTrue(flag);
-		
-		
+
 	}
 }

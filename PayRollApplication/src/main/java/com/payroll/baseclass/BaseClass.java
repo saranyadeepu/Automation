@@ -12,9 +12,8 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.ie.InternetExplorerDriver;
-import org.testng.annotations.AfterMethod;
 import org.testng.annotations.AfterSuite;
-import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeSuite;
 import org.testng.annotations.BeforeTest;
 
@@ -27,14 +26,14 @@ public class BaseClass {
 	public static WebDriver driver;
 
 	
-	@BeforeSuite
+	@BeforeTest
 	public void log() {
 		DOMConfigurator.configure("log4j.xml");
 		ExtentManager.setExtent();
 	}
 	
 	// loadConfig method is to load the configuration
-	@BeforeTest
+	@BeforeSuite
 	public void loadConfig() {
 
 		try {
@@ -76,8 +75,8 @@ public class BaseClass {
 
 	}
 	
-	  @AfterMethod 
-		public static void closeBrowser() {
+	  @AfterTest
+		public void closeBrowser() {
 			driver.quit();
 		}
 	  @AfterSuite

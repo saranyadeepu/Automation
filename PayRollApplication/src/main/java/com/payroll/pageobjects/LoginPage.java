@@ -75,15 +75,6 @@ public class LoginPage {
 	}
 
 	public void validLogin() throws Exception {
-
-		/*
-		 * ExcelLibrary xlx = new ExcelLibrary(); 
-		 * String sheetName = "Login"; 
-		 * String Testcase = "Valid";
-		 * ArrayList<String> a = xlx.getData(sheetName, Testcase);
-		 * act.type(UserName(), a.get(1)); 
-		 * act.type(UserName(), a.get(2));
-		 */
 		UserName().sendKeys("carol");
 		Log.info("Entered Username");
 		Password().sendKeys("1q2w3e4r");
@@ -91,6 +82,16 @@ public class LoginPage {
 		Login().click();
 		
 	}
+	
+	public void validLogin(String Username, String pwd) throws Exception {
+		UserName().sendKeys(Username);
+		Log.info("Entered Username");
+		Password().sendKeys(pwd);
+		Log.info("Password Entered");
+		Login().click();
+		
+	}
+
 
 	public boolean beforeLoginCheck() {
 
