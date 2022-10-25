@@ -2,28 +2,28 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-10-12T22:17:09 IST" name="Default suite" finished-at="2022-10-12T22:17:20 IST" duration-ms="10856">
+  <suite started-at="2022-10-17T21:19:23 IST" name="Default suite" finished-at="2022-10-17T21:19:39 IST" duration-ms="15956">
     <groups>
     </groups>
-    <test started-at="2022-10-12T22:17:09 IST" name="Default test" finished-at="2022-10-12T22:17:20 IST" duration-ms="10856">
-      <class name="com.RegressionTestCases.AddValidClientTest">
-        <test-method is-config="true" signature="loadConfig()[pri:0, instance:com.RegressionTestCases.AddValidClientTest@6d763516]" started-at="2022-10-12T22:17:09 IST" name="loadConfig" finished-at="2022-10-12T22:17:09 IST" duration-ms="6" status="PASS">
+    <test started-at="2022-10-17T21:19:23 IST" name="Default test" finished-at="2022-10-17T21:19:39 IST" duration-ms="15956">
+      <class name="com.RegressionTestCases.VerifyUserLoginTest">
+        <test-method is-config="true" signature="loadConfig()[pri:0, instance:com.RegressionTestCases.VerifyUserLoginTest@4fb0f2b9]" started-at="2022-10-17T21:19:23 IST" name="loadConfig" finished-at="2022-10-17T21:19:23 IST" duration-ms="8" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loadConfig -->
-        <test-method is-config="true" signature="call()[pri:0, instance:com.RegressionTestCases.AddValidClientTest@6d763516]" started-at="2022-10-12T22:17:09 IST" name="call" finished-at="2022-10-12T22:17:15 IST" depends-on-methods="com.BaseClass.BaseClass.loadConfig" duration-ms="5798" status="PASS">
+        <test-method is-config="true" signature="call()[pri:0, instance:com.RegressionTestCases.VerifyUserLoginTest@4fb0f2b9]" started-at="2022-10-17T21:19:23 IST" name="call" finished-at="2022-10-17T21:19:35 IST" duration-ms="12511" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- call -->
-        <test-method signature="addClient()[pri:0, instance:com.RegressionTestCases.AddValidClientTest@6d763516]" started-at="2022-10-12T22:17:15 IST" name="addClient" finished-at="2022-10-12T22:17:20 IST" duration-ms="4742" status="PASS">
+        <test-method signature="validUserLoginTest()[pri:0, instance:com.RegressionTestCases.VerifyUserLoginTest@4fb0f2b9]" started-at="2022-10-17T21:19:35 IST" name="validUserLoginTest" finished-at="2022-10-17T21:19:38 IST" duration-ms="3039" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- addClient -->
-        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:com.RegressionTestCases.AddValidClientTest@6d763516]" started-at="2022-10-12T22:17:20 IST" name="closeBrowser" finished-at="2022-10-12T22:17:20 IST" duration-ms="284" status="PASS">
+        </test-method> <!-- validUserLoginTest -->
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:com.RegressionTestCases.VerifyUserLoginTest@4fb0f2b9]" started-at="2022-10-17T21:19:38 IST" name="closeBrowser" finished-at="2022-10-17T21:19:39 IST" duration-ms="361" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeBrowser -->
-      </class> <!-- com.RegressionTestCases.AddValidClientTest -->
+      </class> <!-- com.RegressionTestCases.VerifyUserLoginTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

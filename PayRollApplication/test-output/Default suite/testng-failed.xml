@@ -5,10 +5,9 @@
     <classes>
       <class name="com.RegressionTestCases.AddValidClientTest">
         <methods>
-          <include name="addClient"/>
+          <include name="addClientbyExcel"/>
           <include name="call"/>
           <include name="loadConfig"/>
-          <include name="closeBrowser"/>
         </methods>
       </class> <!-- com.RegressionTestCases.AddValidClientTest -->
     </classes>
